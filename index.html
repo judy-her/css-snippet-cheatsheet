@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto+Mono&family=Sarabun:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <title>CSS Cheatsheet</title>
+</head>
+<body> 
+  <!-- Header -->
+  <header>
+      <h1>CSS Snippet Cheatsheet</h1>
+      <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card glow">
+        <div class="overlay-card glow">Flexbox Row</div>
+        <header>Use these three properties to create a Flexbox row layout.</header>
+        <div class="snippet all">
+          <p>.row { <br>
+              display:flex; <br>
+              flex-direction: row; <br>
+              flex-wrap;<br>
+           }
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="overlay-card">Flexbox Column</div>
+        <header>Use this to create a Flexbox column layout</header>
+        <div class="snippet all">
+          <p>.column { <br>
+              display:flex; <br>
+              flex-direction: column; <br>
+           }
+          </p>
+        </div>
+      </section>
+
+      <section class="card grid-layout">
+        <div class="overlay-card">CSS Grid Layout</div>
+        <header>Build a 12-column layout using CSS Grid</header>
+        <div class="snippet all">
+          <p>.grid { <br>
+              display:grid; <br>
+              width: 100%; <br>
+              grid-template-columns: repeat(12, 1fr);<br>
+           }
+          </p>
+        </div>
+      </section>
+
+      <section class="card large-column">
+        <div class="overlay-card">Linear Gradients</div>
+        <header>This will create a background linear gradient from top to bottom.</header>
+        <div class="snippet all">
+          <p>.linear-gradient-background { <br>
+              background-image: linear-gradient( <br>
+                rgba(232, 102, 236, 0.3)0%,; <br>
+              rgba(232, 102, 236, 0.6) 100%); <br>
+              } <br>
+            </p>
+        </div>
+      </section>
+
+      <section class="card large-column">
+        <div class="overlay-card">Box Transition Glow</div>
+        <header>Use transition and box shadows to glow on hover.</header>
+        <div class="snippet all">
+          <p>.code-card  .card-header { <br>
+              border-radius: 8px; <br>
+              transition: all 0.5s ease-in-out; <br>
+              } <br>
+              .code-card:hover, .code-card:hover .card-header { <br>
+                box-shadow: inset 0px 0px 8px <br>
+                rgba(232, 102, 236, 1), 0 0 15px <br>
+                rgba(232, 102, 236, 1); <br>
+              }
+            </p>
+        </div>
+      </section>
+
+      <section class="card large-column">
+        <div class="overlay-card">Overlay Card with Title</div>
+        <header>Use position properties and negative margins to raise elements higher than their natural starting point.</header>
+        <div class="snippet all">
+          <p> .card-header { <br>
+              position: relative; <br>
+              margin-top: -20px<br>
+              } <br>
+            
+            </p>
+        </div>
+      </section>
+      
+
+
+
+    </div>
+  </main>
+    
+   
+  <footer>
+    <h3>Made with 💜 and CSS</h3>
+  </footer>
+  
+
+
+</body>
+</html>
